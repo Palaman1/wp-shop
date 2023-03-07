@@ -1,0 +1,220 @@
+@import 'vars'
+@import 'fonts'
+@import 'reset'
+@import 'global'
+
+//Start Header styles////////////
+
+.header
+  position: sticky
+  z-index: 20
+  top: 0
+  .container
+    padding-top: 40.88px
+  &__menu
+    position: absolute
+    flex-direction: column
+    align-items: center
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    transform: translateX(-200%)
+    transition: all .5s ease
+    background: $bcg-menu
+    text-align: right
+    &.header__menu--active
+      transform: translateX(0)
+      transition: all .5s ease
+  &__menu-wrapp
+    transform: translateX(413px)
+    max-width: 280px
+    margin-left: auto
+  &__menu-title
+    font-size: 18px
+    margin-top: 109px
+  &__menu-item
+    width: auto
+    &:hover
+      background-color: $nude
+  &__menu-item__section--active
+    background-color: $rose-gold
+    & + .header__menu-sub-menu
+      display: block
+      -webkit-transition: all 0.8s ease
+      -o-transition: all 0.8s ease
+      transition: all 0.8s ease
+      background-color: $rose-gold
+      padding: 4px 12px
+      &::before
+        transform: rotate(180deg)
+        transition: all .8s ease
+  &__menu-item__section
+    cursor: pointer
+    &::before
+      content: url('../images/icons/chevron.svg')
+      position: absolute
+      display: flex
+  &__menu-item__link,
+  &__menu-item__section
+    @extend %product-regular
+    color: $black
+    font-size: 16px
+  &__menu-sub-menu
+    display: none
+    -webkit-transition: all 0.8s ease
+    -o-transition: all 0.8s ease
+    transition: all 0.8s ease
+  &__menu-sub-item
+    &:hover
+      background-color: $nude
+  &__btn
+    display: flex
+    width: 34px
+    height: 30px
+    margin-left: auto
+    cursor: pointer
+    background-color: transparent
+    &-span,
+    &-span::before,
+    &-span::after  
+      display: block
+      width: 34px
+      height: 4px
+      background-color: $white
+    &-span::before,
+    &-span::after  
+      content: ''
+    &-span::after  
+      transform: translateY(21px)
+    &-span::before 
+      transform: translateY(13px)
+
+.toggled
+  & .header__btn-span,
+  & .header__btn-span::before
+    background-color: $black
+    transition: .3s
+  & .header__btn-span
+    transform: rotate(46deg) translate(11px, 10px)
+  & .header__btn-span::before
+    transform: rotate(86deg) translate(0px)
+  & .header__btn-span::after
+    opacity: 0
+
+//End Header styles////////////
+
+//Start Main screen styles////////////
+
+.main-screen
+  margin-top: -71px
+  & .swiper-slide
+    &__image
+      height: 810px
+      object-fit: fill
+      
+.swiper-pagination
+  bottom: 25px!important
+
+.swiper-pagination-bullet
+  @include size(10.44px)
+  background-color: $white
+  opacity: 1
+
+.swiper-pagination-bullet-active
+  background-color: $pink
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+  margin-right: 24.35px
+  margin-left: 0
+  &:last-child
+    margin-right: 0
+
+//End Main screen styles////////////
+
+//Start Products styles/////////////
+
+.products
+  padding-top: 60px
+  margin-bottom: 114px
+
+  & .container
+    text-align: right
+  &__title
+    @extend %rtl
+    margin-bottom: 8px  
+  &__text
+    @extend %rtl
+    max-width: 619px
+    margin: 0 0 15px auto
+  &__span
+    display: none
+  &__span--active
+    display: block
+    & .products__button::after
+         transform: translateY(3px) rotate(180deg) 
+  &__items
+    display: flex
+    text-align: center
+  &__button
+    width: 85px
+    height: 30px
+    padding: 0
+    margin-bottom: 52px
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: 500
+    line-height: 30px
+    &::after
+     @include size(14px)
+     position: absolute
+     content: url('../images/icons/chevron.svg')
+     transform: translateY(3px)
+     transition: all .5s ease
+  &__items
+    display: flex
+    justify-content: space-between
+    max-height: 388px
+  &__items-item
+    max-width: 314px
+    max-height: 388px
+  &__items-wrap
+    width: 320px
+    height: 260px
+  &__items-image
+    max-width: 279px
+    max-height: 100%
+    margin: 0 auto 6px
+    object-fit: cover
+    &--inner
+      max-width: 179px
+  &__items-title
+    font-size: 16px
+  &__items-info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 18px
+    font-size: 16px
+  &__items-label
+    @extend %rtl
+    @extend %body-medium
+    color: $black
+    opacity: .5
+    &--disable
+      display: none
+  &__items-price
+    @extend %body-medium
+    display: flex
+    margin-left: auto
+    &__span
+      transform: scale(1.25) translate(-2px, -1px)
+  &__item-btn
+    @extend %body-medium
+    font-weight: 500
+    border: 1px solid $black
+    padding: 8px 76px 8px 81px
+    color: $black
+
+//End Products styles////////////
+
+@import 'media'

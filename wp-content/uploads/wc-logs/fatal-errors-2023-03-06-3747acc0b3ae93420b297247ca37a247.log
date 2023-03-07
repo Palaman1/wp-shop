@@ -1,0 +1,24 @@
+2023-03-06T15:15:46+00:00 CRITICAL Unterminated comment starting line 23 в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 23
+
+2023-03-06T15:16:23+00:00 CRITICAL Unterminated comment starting line 23 в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 23
+
+2023-03-06T15:16:28+00:00 CRITICAL Unterminated comment starting line 23 в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 23
+
+2023-03-06T19:13:22+00:00 CRITICAL syntax error, unexpected identifier "template_url", expecting ")" в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 17
+
+2023-03-06T19:13:25+00:00 CRITICAL syntax error, unexpected identifier "template_url", expecting ")" в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 17
+
+2023-03-06T19:29:18+00:00 CRITICAL syntax error, unexpected token ",", expecting ")" в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 20
+
+2023-03-06T19:32:17+00:00 CRITICAL syntax error, unexpected floating-point number ".0", expecting ")" в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 19
+
+2023-03-06T19:32:39+00:00 CRITICAL syntax error, unexpected floating-point number ".0", expecting ")" в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 20
+
+2023-03-06T19:40:41+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 20
+
+2023-03-06T20:45:23+00:00 CRITICAL syntax error, unexpected token "," в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 22
+
+2023-03-06T21:13:43+00:00 CRITICAL syntax error, unexpected token "," в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 23
+
+2023-03-06T21:14:02+00:00 CRITICAL syntax error, unexpected token "," в C:\xampp\htdocs\test-task\wp-content\themes\storefront__work\functions.php на строке 23
+

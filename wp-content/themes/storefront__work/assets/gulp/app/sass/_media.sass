@@ -1,0 +1,79 @@
+//Start Media styles////////////
+
+//Start Small desktop styles////////////
+
+  @media (max-width: 1380px)
+.header
+  &__menu-wrapp
+    transform: translateX(-20vw)
+    
+.main-screen
+  & .swiper-slide__image
+    max-height: 810px
+    height: auto
+
+@media (max-width: 1260px)
+  .container
+    padding: 0 40px
+
+  .products__items-title
+    height: 36px
+
+@media (max-height: 700px)
+  .main-screen
+    & .swiper-slide
+      &__image
+        height: 84vh
+
+//End Small desktop styles////////////
+
+//Start Tablet styles////////////
+
+@media (max-width: 1080px)
+  .products
+    &__items-item
+      max-width: 256px
+    &__items-wrap
+      width: 280px
+
+@media (max-width: 920px)
+  .products
+    &__items
+      flex-direction: column
+      max-height: max-content
+    &__items-item
+      align-self: center
+      & + &
+        margin-top: 40px
+
+@media (max-width: 728px)
+  .header
+    &__menu-wrapp
+      transform: translateX(-12vw)
+
+//End Tablet styles////////////
+
+//Start Mobile styles////////////
+
+@media (max-width: 568px)
+  .container
+    padding: 0 20px
+  .header
+    &__menu-wrapp
+      transform: translateX(-16vw)
+
+@media (max-width: 440px)
+  .header
+    &__menu-wrapp
+      transform: translateX(-20vw)
+      max-width: 210px
+
+@media (min-width: 320px)
+  .main-screen
+    & .swiper-slide
+      &__image
+        min-height: 320px
+
+//End Mobile styles////////////
+
+//End Media styles////////////
